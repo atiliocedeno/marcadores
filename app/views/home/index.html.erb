@@ -1,0 +1,15 @@
+<h1>Form Marcadores</h1>
+
+<%= pie_chart Bookmark.joins(:type).group('name').count %>
+
+<br>
+<div id='form_category'><%= render 'categories/form', category: @category %></div>
+<br>
+<hr>
+<br>
+<div id='form_type'><%= render 'types/form', type: @type %></div>
+<br>
+<hr>
+<br>
+<div id='form_bookmark'><%= render 'bookmarks/form', bookmark: @bookmark     %></div>
+
